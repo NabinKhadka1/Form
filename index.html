@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="signup-page">
+            <h1 class="signup-title">Custom Date Picker</h1>
+            <form action="index.html" class="signup-form">
+                <label for="title">Title</label>
+                <select id="title">
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                </select>
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" required>
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" required>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                
+                <label class="dateY">Date</label>
+                 <div class="dateX">
+                    <div class="date-picker">
+                        <div class="selected-date"></div>
+                
+                        <div class="dates">
+                            <div class="month">
+                                <div class="arrows prev-mth">&lt;</div>
+                                <div class="mth"></div>
+                                <div class="arrows next-mth">&gt</div>
+                            </div>
+                            <div class="days">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signup-form__checkbox">
+                    <input type="checkbox" id="agree-terms" required>
+                    <label for="agree-terms">Agree to
+                        <a href="#">Terms &amp; Conditions</a>
+                    </label>
+
+                </div>
+                
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>
